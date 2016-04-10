@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8 />
+<title>Using Transitions to Animate an Image</title>
+<link href='http://fonts.googleapis.com/css?family=Aclonica|Didact+Gothic' rel='stylesheet' type='text/css'>
+<style>
+
+#wind {
+	width:390px;height:306px;
+	margin-left: 550px;
+}
+/* ADD a rule creating the final look of the wind image (scaled up 1.3x and skewed 10 degrees). Write the selector to apply this rule when the mouse is over the WIND.*/
+#wind:hover {
+	transform: skew(10deg) scale(1.3);
+}
+
+
+#pinwheel {
+	position:absolute;top:200px;left:330px;z-index:2;
+	width:180px;height:150px;
+}
+/* ADD a rule describing the final animation state of the pinwheel image (rotates 100 radians). Write the selector to apply this rule to the PINWHEEL when the mouse is over the WIND. (I suggest using the sibling selector ) */
+
+#wind:hover+#pinwheel {
+	transform: rotate(100rad);
+}
+ol {
+	list-style: lower-alpha;
+}
+
+
+/* ADD transitions to the wind style (transition in 1.5 seconds with linear easing) */
+#wind{
+	transition: all 1.5s linear;
+}
+
+/* ADD transitions to the  pinwheel style (transition in 10 seconds with easing) */
+#pinwheel{
+	transition: all 10s ease;
+}
+/* Add two branches on the tree that move when the wind blows */
+#branch1 {
+	position: absolute;
+	top: 250px;
+	left: 65px;
+	transition: all 1s 2s ease-in;
+}
+#branch2 {
+	position: absolute;
+	top: 264px;
+	left: 180px;
+	transition: all 1s 1s ease-in;
+}
+#wind:hover ~ #branch1 {
+	transform: skew(5deg) translate(-10px, -10px);
+}
+#wind:hover ~ #branch2 {
+	transform: skew(3deg) translate(8px, 8px);
+}
+
+/* Notice the stick is just a skinny div element */
+#stick {
+	position:absolute;top:275px;left:420px;z-index:1;
+	width:5px;height:150px;
+	background:none #804408;
+	border:none;
+}
+div {
+	width:1024px;height:950px;
+	position:relative; 
+	margin:0 auto;padding:0;
+	background:url('images/background.jpg') no-repeat top left #6CF;
+	border:rgba(0,45,0,.3) 10px groove;
+}
+section{
+	position:absolute; bottom:0; padding:15px;
+	border:thin solid  #060; border-top:9px solid #060;
+	background-color:#9C3;
+}
+h1{font-family: 'Aclonica', sans-serif;}
+p{font: 26px/1.2 'Didact Gothic', sans-serif;}
+</style>
+</head>
+<body style="background-color:#6CF;">
+<div> 
+	<img id="wind" src="images/wind.gif" alt="wind">
+	<img id="pinwheel" src="images/pinwheel.gif" alt="pinwheel">
+	<div id="stick"></div>
+	<img id="branch1" src="images/branch.gif" alt="branch1">
+	<img id="branch2" src="images/branch.gif" alt="branch2">
+<!--</div>-->
+
+<!-- Instructions -->
+  <section>
+    <h1>Using Transitions to Animate a Scene</h1>
+<p>Download this <a  href="http://faculty.cascadia.edu/brianb/bit168/exercises/transitions/start.zip">page source and the images</a> and follow the hints in the code to add CSS translations and transitions to animate the image.</p>
+      <p>After the base animation is finished, experiment with different easings, and <a href="http://www.the-art-of-web.com/css/css-animation/" target="_blank">adding multiple transforms</a> to get different effects and other character images.</p>
+  </section>
+</div>
+</body>
+</html>

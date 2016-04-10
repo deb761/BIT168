@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="scuba dive diving club contact">
+<meta name="description" content="The Seahorse Dive Club can be contacted by email.">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<script src="scripts/member.js"></script>
+<title>Contact Us</title>
+<style>
+	.group {
+	}
+</style>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+<h1>Contact Us</h1>
+<p>For general information, contact <a href="mailto:info@seahorsediveclub.com">info@seahorsediveclub.com</a>.</p>
+<table>
+    <tr>
+    <th colspan="2" class="group">Club Officers:</th>
+    </tr>
+    <tr>
+    	<td>President</td>
+        <td><a href="mailto:president@seahorsediveclub.com">president@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Vice President</td>
+	 	<td><a href="mailto:vp@seahorsediveclub.com">vp@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Treasurer</td>
+	 	<td><a href="mailto:treasurer@seahorsediveclub.com">treasurer@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Secretary</td>
+        <td><a href="mailto:secretary@seahorsediveclub.com">secretary@seahorsediveclub.com</a></td>
+	</tr>
+    <tr>
+		<th colspan="2">Other Contacts:</th>
+	</tr>
+    <tr>
+		<td>Membership</td>
+        <td><a href="mailto:membership@seahorsediveclub.com">membership@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Dive Locker</td>
+		<td><a href="mailto:divelocker@seahorsediveclub.com">divelocker@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Photo &amp; Video</td>
+	 	<td><a href="mailto:photo@seahorsediveclub.com">photo@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Webmaster</td>
+	 	<td><a href="mailto:webmaster@seahorsediveclub.com">webmaster@seahorsediveclub.com</a></td>
+    </tr>
+    <tr>
+		<td>Site Content</td>
+        <td><a href="mailto:editor@seahorsediveclub.com">editor@seahorsediveclub.com</a></td>
+    </tr>
+</table>
+<p></p>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

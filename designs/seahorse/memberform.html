@@ -1,0 +1,209 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<link rel="stylesheet" type="text/css" href="styles/form.css">
+<script src="scripts/member.js"></script>
+<title>Template</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+    <section id="content" class="wrapper">
+        <form method="post" action="http://wwwebworks.biz/bit112/showFormData.php" name="feedback">
+        <fieldset>
+        	<h2 class="hdr-appdata">Application Information</h2>
+        	<div  class="fields">
+        	<fieldset class="radios">
+            	<!-- <legend>Application Type:</legend>-->
+                <p class="row">
+                	<input type="radio" name="apptype" id="newmember">
+                	<label for="newmember">New Member</label>
+                </p>
+                <p class="row">
+                    <input type="radio" name="apptype" id="renewal">
+                    <label for="renewal">Renewal</label>
+                </p>
+            </fieldset>
+        	<fieldset class="radios">
+            	<!-- <legend>Membership Type:</legend>-->
+                <p class="row">
+                    <input type="radio" name="memtype" id="individual">
+                    <label for="individual">Individual</label>
+                </p>
+                <p class="row">
+                    <input type="radio" name="memtype" id="family">
+                    <label for="family">Family</label>
+                </p>
+            </fieldset>
+            <fieldset class="radios">
+            <input type="checkbox" name="change-info" value="change-info" id="change-info">
+            <label for="change-info">Change information</label>
+            </fieldset>
+            </div>
+            </fieldset>
+            <fieldset>
+            <h2 class="hdr-member">Member Information</h2>
+        	<div  class="fields">
+            <p class="row">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" class="field-large" required
+                	aria-required="true" />
+            </p>
+            <p class="row">
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" class="field-large" required aria-required="true" />
+            </p>
+        	<p class="row">
+                <label for="address">Street Address:</label>
+                <input type="text" name="address" id="address" class="field-large" required aria-required="true" />
+            </p>
+            <p class="row">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" class="field-city" required aria-required="true" />
+                <label for="state">State:</label>
+                <input type="text" name="state" id="state" class="field-state" required aria-required="true" />
+                <label for="zip">Zip:</label>
+                <input type="text" name="zip" id="zip" class="field-zip" required aria-required="true" />
+            </p>
+            <p class="row">
+                <label for="work-phone">Work Phone:</label>
+                <input type="tel" name="work-phone" id="work-phone" class="field-medium" required
+                 aria-required="true" />
+                <label for="work-email">Work Email:</label>
+                <input type="email" name="work-email" id="work-email" class="field-medium" required
+                 aria-required="true" />
+            </p>
+            <p class="row">
+                <label for="home-phone">Home Phone:</label>
+                <input type="tel" name="home-phone" id="home-phone" class="field-medium" required
+                 aria-required="true" />
+                <label for="home-email">Home Email:</label>
+                <input type="email" name="home-email" id="home-email" class="field-medium" required
+                 aria-required="true" />
+           </p>
+           </div>
+           </fieldset>
+           <fieldset>
+           <h2 class="hdr-dues">Dues (New members joining after June 30th pay ½ dues)</h2>
+        	<div  class="fields">
+           <table class="dues">
+           	<tr><th>Initiation (one-time fee for new members)</th><td>$10</td>
+            	<td id="init-dues">&nbsp;</td></tr>
+           	<tr><th>Regular Membership (individual employee, contractor, or supplier)</th><td>$25</td>
+            	<td id="regular-dues">&nbsp;</td>
+            </tr>
+           	<tr><th>Family Membership (includes spouse and dependent children of member)</th>
+            	<td>$35</td><td id="family-dues">&nbsp;</td>
+            </tr>
+           	<tr><th>Associate Membership (former employee, qualifying family member)</th><td>$35</td>
+            	<td id="associate-dues">&nbsp;</td>
+            </tr>
+           	<tr><th>Intern or Co-op student (initiation fee waived)</th><td>$10</td>
+            	<td id="intern-dues">&nbsp;</td>
+            </tr>
+           	<tr><th>Retiree membership (retired per Boeing rules)</th><td>$5</td>
+            	<td id="retiree-dues">&nbsp;</td>
+            </tr>
+           	<tr><th>Late fee (renewing after May 1st)</th><td>$5</td><td id="late-dues">&nbsp;</td>
+            </tr>
+           	<tr><th colspan="2">Total (make check payable to: Boeing Employees SCUBA Diving Club)</th>
+            	<td id="total-dues">$00</td>
+            </tr>
+           </table>
+           </div>
+           </fieldset>
+           <fieldset>
+           <h2 class="hdr-cert">Certification Information (optional)</h2>
+        	<div  class="fields">
+           <p class="row">
+                <label for="num-dives"># of dives:</label>
+                <input type="text" name="num-dives" id="num-dives" class="field-small" required aria-required="true" />
+                <label for="cert-level">Highest Certification Level:</label>
+                <input type="text" name="cert-level" id="cert-level" class="field-medium" required
+                	aria-required="true" />
+           </p>
+           <p class="row">
+                <label for="psi-num">PSI # (Compressor members VCI/PSI):</label>
+                <input type="text" name="psi-num" id="psi-num" class="field-medium" required aria-required="true" />
+           </p>
+           <p class="row">
+                <label for="wsbe-num">WSBE # (WA State Boating Education):</label>
+                <input type="text" name="wsbe-num" id="wsbe-num" class="field-medium" required aria-required="true" />
+           </p>
+           </div>
+           </fieldset>
+           <fieldset>
+           <h2 class="hdr-family">Family Membership Information</h2>
+        	<div  class="fields">
+           <table>
+           <tr><th>Last Name</th><th>First Name</th><th>E-Mail</th></tr>
+           <tr>
+           	<td><input type="text" name="fam-ln1" id="fam-ln1" class="field-medium" /></td>
+            <td><input type="text" name="fam-fn1" id="fam-fn1" class="field-medium" /></td>
+            <td><input type="email" name="fam-em1" id="fam-em1" class="field-email" /></td>
+           </tr>
+           <tr>
+           	<td><input type="text" name="fam-ln2" id="fam-ln2" class="field-medium" /></td>
+            <td><input type="text" name="fam-fn2" id="fam-fn2" class="field-medium" /></td>
+            <td><input type="email" name="fam-em2" id="fam-em2" class="field-email" /></td>
+           </tr>
+           <tr>
+           	<td><input type="text" name="fam-ln3" id="fam-ln3" class="field-medium" /></td>
+            <td><input type="text" name="fam-fn3" id="fam-fn3" class="field-medium" /></td>
+            <td><input type="email" name="fam-em3" id="fam-em3" class="field-email" /></td>
+           </tr>
+           <tr>
+           	<td><input type="text" name="fam-ln4" id="fam-ln4" class="field-medium" /></td>
+            <td><input type="text" name="fam-fn4" id="fam-fn4" class="field-medium" /></td>
+            <td><input type="email" name="fam-em4" id="fam-em4" class="field-email" /></td>
+           </tr>
+           </table>
+           </div>
+           </fieldset>
+           <button id="submit" onClick="validate" value="Submit" class="btn">Submit</button>
+        </form>
+
+    </section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

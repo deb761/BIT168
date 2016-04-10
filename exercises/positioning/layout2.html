@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8/>
+<title>BIT 168: Interactive Authoring: Layout #2</title>
+<link href="blockcolors.css" rel="stylesheet"/>
+<style>
+body {
+    position: relative; /* set up body so nav can be positioned relative to it. */
+	width: 960px;
+	margin: auto;
+}
+header {
+	height: 3em;
+}
+nav {
+	position: absolute;
+	right: 0.5em;
+	top: 0.5em;
+	width: 20em;
+	height: 2em;
+}
+section {
+	margin: 4px 0;
+}
+section+section {
+	display: inline-table;
+	vertical-align: top;
+	height: 300px;
+	width: 471px;
+	margin-right: 0.5em;
+}
+section+section+section {
+	margin-right: 0;
+}
+</style>
+</head>
+<body>
+	<header>Header</header>
+	<nav>Nav</nav>
+	<section>Section</section>
+	<section>Section A</section>
+	<section>Section B</section>
+	<img src="layout2.gif">
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/format.css">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+	<script type="text/javascript" src="../scripts/date.js"></script>
+    <script src='http://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script src='scripts/jquery.keyframes.min.js'></script>
+    <script type='text/javascript' src='scripts/animate.js'></script>
+    <title>Deborah Engelmeyer Portfolio Design</title>
+</head>
+
+<body onLoad="document.getElementById('date').innerHTML=document.lastModified;">
+	<div id="front">
+    <header>
+		<h1>Portfolio Design</h1>
+    </header>
+    <nav>
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../exercises/index.html">Exercises</a>
+				<ul>
+					<li><a href="../exercises/sandwich.html">Sandwich Fixin's</a></li>
+					<li><a href="../exercises/veggies/index.html">Veggies List</a></li>
+					<li><a href="../exercises/positioning/index.html">Positioning Boxes</a></li>
+					<li><a href="../exercises/lincoln/lincoln.html">Lincoln's Address</a></li>
+					<li><a href="../exercises/pinwheel/start.html">Pinwheel Animation</a></li>
+					<li><a href="../exercises/bunny-love/start.html">Bunny Love</a></li>
+					<li><a href="../exercises/grid/index.html">Grid Layout</a></li>
+					<li><a href="../exercises/popup/figure6.24.html">Popups</a></li>
+					<li><a href="../exercises/responsive/responsive.html">Responsive Design</a></li>
+				</ul>
+			</li>
+			<li><a id="current" href="index.html">Assignments</a>
+				<ul>
+					<li><a href="portfolio-design.html">Portfolio Design</a></li>
+					<li><a href="interactive.html">Interactive Design</a></li>
+					<li><a href="cookie.html">Interactive Story</a></li>
+				</ul>
+			</li>
+			<li><a href="../designs/index.html">Designs</a>
+				<ul>
+					<li><a href="../designs/seahorse/index.html">Seahorse Dive Club Site</a></li>
+					<li><a href="../designs/knitting/index.html">Knitting Site</a></li>
+				</ul>
+			</li>
+			<li><a href="../resume.html">Resume</a></li>
+		</ul>
+    </nav>
+    <section id="content">
+		<h2>Site Goals</h2>
+		<ul>
+			<li>Provide a forum for potential customers and peers to view my previous work.</li>
+		</ul>
+		<h2>Site Audience</h2>
+		<ul>
+			<li>Prospective employers</li>
+			<li>Fellow students</li>
+		</ul>
+		<h2>Style Guide</h2>
+		<h3>Fonts</h3>
+		<dl>
+			<dt>Dancing Script</dt>
+			<dd>This font is used for the headers.  The font was selected because I wanted the text to have a hint of a handwritten appearance, yet still be slightly formal and easy to read.  The font is licensed under the <a href="http://scripts.sil.org/OFL">SIL Open Font Licence, 1.1</a></dd>
+			<dt>Lora</dt>
+			<dd>This font is used for body text.  The font was selected because serif styles tend to be easier to read in large blocks of text, and because the font mimicked the classic curves of Font 1.  The license is the <a href="http://scripts.sil.org/OFL">SIL Open Font Licence, 1.1</a></dd>
+		</dl>
+		<h3>Colors</h3>
+		<table>
+          <caption>Website Color Palette</caption>
+          <tr>
+            <th>Description</th>
+            <th>Hex Code</th>
+            <th>Appearance</th>
+          </tr>
+          <tr>
+            <td>Background color for page, used behind sky background to fill in.</td>
+            <td>#6c95d5</td>
+            <td style="background:#6c95d5">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background color for Header/Navigation section</td>
+            <td>#d9dae4</td>
+            <td style="background:rgba(217,218,228,0.95)">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background color for content section.  The card will look a bit different than the background here because the content section has an opacity of 80% and the card is completely opaque.</td>
+            <td>#e8e4eb</td>
+            <td style="background:rgb(232,228,235)">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background color for footer section.  It picks up some green to echo the trees in
+			the background.</td>
+            <td>#bee5ea</td>
+            <td style="background:rgb(190,229,234)">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Main text color, shadow for the h1, h2, and h3 elements.  Almost black with a hint of blue.</td>
+            <td>#060829</td>
+            <td style="background:#060829">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Main heading color. Dark forest green to pull in color from the trees near the footer.</td>
+            <td>#032610</td>
+            <td style="background:#032610">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Background for navigation buttons. Dark navy.</td>
+            <td>#0a0670</td>
+            <td style="background:#0A0670">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Link text</td>
+            <td>#344d73</td>
+            <td style="background:#344d73">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>Link visited, focus, hover, and active text color</td>
+            <td>#1c5258</td>
+            <td style="background:#1c5258">&nbsp;</td>
+          </tr>
+		</table>
+		<h2>Overall Formatting</h2>
+		<p>The page is set up to show a winter sky with clouds and some blue sky showing through, and a row of snow-covered trees on the bottom.  Slightly transparent fields will hold the header, navigation, content,
+		and footer sections.</p>
+		<p>The navigation bar will have buttons for the main navigation links, with the current page indicated
+		by the button being reverse-highlighted.  When hovered over, the navigation buttons are also reverse-highlighted, and when active it will pick up the footer background color.</p>
+		<p>The overall site colors are cool colors such as blue and green to coordinate with the winter theme of the background.  Accents will use the same general hues as the background and text.</p>
+		<p>The general font-family for the site is Calibri with backup fonts Arial, Helvetica and Sans Serif.  The general text size is 1.2em. Headings are in Cambria Bold Italic backup fonts Times New Roman and Serif, and larger font sizes than body text.</p>
+		<h2>Assets</h2>
+		<p>Several images will be used on the website, all photographs will be taken by a family member or myself and edited by myself.  The following is a list of the images used throughout the site.  Other images of designs and patterns will be included in the website as it is developed.</p>
+		<ul>
+			<li><a href="https://www.facebookbrand.com/guidelines?asset=2&media=1,2,3&platform=0">FB-f-Logo__blue_29.png</a> – Facebook provides permission to use this</li>
+			<li><a href="https://brand.linkedin.com/policies">In-2C-28px-TM.png</a> – LinkedIn provides permission to use this.</li>
+			<li>sky.png</li>
+			<li>trees.gif</li>
+			<li>snowflakes - Newsha Ghasemi provided the base image free of charge.  See <a href="http://rsr-productions.deviantart.com/art/Snowflake-Pattern-103978654">Snowflake Pattern</a>.  The
+				individual snowflakes were taken out of the image and the gray background was
+				changed to transparency.
+				<ul>
+					<li>snowflake1.png</li>
+					<li>snowflake2.png</li>
+					<li>snowflake3.png</li>
+					<li>snowflake4.png</li>
+					<li>snowflake5.png</li>
+				</ul>
+			</li>
+			<li>Expand/Contract icons - Created in Microsoft Powerpoint, exported as jpeg files,
+			then converted the white background to transparent and scaled down in GIMP.
+				<ul>
+					<li>expand.png</li>
+					<li>contract.png</li>
+				</ul>
+			</li>
+			<li>
+				Images of our dog Cookie were taken by my husband, Kenneth Engelmeyer, on his Canon 70D,
+				and used with permission.
+				<ul>
+					<li>cookie-sad.png</li>
+					<li>food.jpg</li>
+					<li>happy.jpg</li>
+					<li>toy.jpg</li>
+					<li>walk.jpg</li>
+				</ul>
+			</li>
+			<li>Image of my self - taken by myself and edited in GIMP.</li>
+		</ul>
+	</section>
+    <footer>
+		<div>
+			<p>Copyright &copy; Deborah Engelmeyer 2016</p>
+			<p>Last modified: <span id="date"></span></p>			
+		</div>
+		<div id="contact">
+			<p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+			<a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="../images/FB-f-Logo__blue_29.png" alt="Facebook"/></a>
+			<a id="linkedin" href="https://www.linkedin.com/in/deborahengelmeyer"><img src="../images/In-2C-28px-TM.png" alt="LinkedIn"/></a>		
+		</div>
+    </footer>
+	</div>
+</body>
+</html>

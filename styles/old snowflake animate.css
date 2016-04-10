@@ -1,0 +1,36 @@
+/* General animation for the website - snowflakes drifting slowly behind the text
+  THIS FILE IS NOT USED!!!!!
+*/
+#snowflake1, #snowflake2, #snowflake3, #snowflake4, #snowflake5 {
+    position: absolute;
+    z-index: -1;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#snowflake1 {
+    transform: translate(100px, -150px);
+    animation-name: drift1;
+}
+
+#snowflake2 {
+     transform: translate(300px, -150px);
+     animation-name: drift2;
+     animation-delay: 20s;
+}
+#snowflake3 {
+    transform: translate(500px, -75px);
+    animation-name: drift3;
+    animation-delay: 5s;
+}
+#snowflake4 {
+    transform: translate(750px, -100px);
+    animation-name: drift4;
+    animation-delay: 13s;
+}
+
+#snowflake5 {
+    transform: translate(1050px, -100px);
+    animation-name: drift5;
+    animation-delay: 17s;
+}

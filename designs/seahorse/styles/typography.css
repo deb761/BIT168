@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	background-color: #C32A2A;
+}
+
+body {
+	background-color: #EFEFEF;
+	width: 90%;
+	margin-right: auto;
+    margin-left: auto;
+    padding: 2.5% 2.5% 2%;
+    font-family: tahoma, arial, Helvetica, sans-serif;
+	color: black;
+    font-size: 1.2em;
+}
+
+/* set headers to a serif font */
+h1, h2, h3 {
+	font-family: 'Karma', serif;
+	color: #003763; /* dark navy */
+	text-shadow: 1px 1px black;
+}
+
+/* link formatting */
+a:link {
+	color: #003763;
+}
+
+a:visited {
+	color: #2727D6;
+}
+
+a:focus {
+	color: #58749B;
+}
+
+a:hover {
+	color: #A60D0D;
+}
+
+a:active {
+	color: #A60D0D;
+}
+
+#letterhead {
+	display: inline-block;
+}
+
+#letterhead h1, #letterhead h2, #letterhead h3 {
+	color: #C32A2A;
+	letter-spacing: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#letterhead h2 {
+	font-size: .9em;
+}
+
+/* login formatting */
+#login {
+	font-size: .7em;
+	border: solid thin;
+	background-color: #B6B6B6;
+	width: 16em;
+}
+
+#logout {
+	border: solid thin;
+	background-color: #B6B6B6;
+	width: 10em;
+}
+
+#login h2 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	text-shadow: none;
+	text-align: center;
+}
+
+#login label {
+	cursor: pointer;
+	display: inline-block;
+	width: 65px;
+	text-align: right;
+}
+
+#login input {
+	font-size: inherit;
+	width: 10em;
+	padding-right: 2px;
+}
+
+/* Navigation formatting */
+#mainNav {
+    margin-right: 1em;
+    width: 200px;
+    background-color: #E8E4EB;
+    border: 1px solid #4F547C;
+}
+
+#mainNav ol, #social ul {
+	list-style-type: none;
+	margin: 0.5em 1em;
+	padding: 0;
+}
+
+
+/* Shift the image over a tad so it fits nicely in the nav bar */
+#mainNav img {
+	position: relative;
+	left: -1em;
+}
+
+ul#social a, ul#social li {
+	display: inline-block;
+	padding: 2px;
+}
+
+/* Content section */
+#content {
+	/*background-color: #fbfbfb;*/
+	padding-bottom: .5em;
+}
+
+/* posting information for a news article */
+article.post h2 {
+	border-top: thin solid #969696;
+	margin-bottom: 0;
+}
+article.post h3 {
+	font-family: tahoma, arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 0.8em;
+	text-shadow: none;
+	margin: 0;
+	color: #969696;
+}
+
+/* footer section */
+footer {
+	background-color: #eee;
+	font-size: .7em;
+	text-align: center;
+	border-top: #0000D4 solid 5px;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Table formatting */
+table, th, td {
+	border: 1px solid #003763;
+}
+
+th, td {
+	padding: .5em;
+}
+
+td.number {
+	text-align: right;
+}

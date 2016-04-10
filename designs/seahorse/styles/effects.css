@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* CSS Document to handle effects */
+
+/* fix the height of the navigation menu items so that the total menu size doesn't 
+   change when the user mouses over an item */
+#mainNav li {
+	height: 2em;
+}
+
+#mainNav a {
+	text-decoration: none;
+}
+
+/* fix height of join us image li */
+li#memform {
+	height: 155px;
+}
+
+#mainNav a {
+	color: #003763;
+}
+
+/* Make all but the current menu item larger when the user hovers over it */
+#mainNav li:not(.current) a:hover {
+	font-size: 1.5em;
+}
+
+/* Make the current menu item larger than the rest and indented a bit */
+#mainNav li.current {
+	color: #003763;
+	font-size: 1.5em;
+	margin-left: 1em;
+}

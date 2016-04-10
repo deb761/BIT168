@@ -1,0 +1,177 @@
+/* Overall formatting */
+html {
+    background-repeat: repeat;
+    background-image: url(../images/fair-isle-background.jpg);
+}
+
+body {
+    width: 90%;
+    margin: auto;
+    padding: 2.5% 2.5% 2%;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+	color: #253034; /* nearly black with a hint of green */
+    font-size: 1.2em;
+}
+
+#banner {
+    background-color: rgba(238,221,204,0.95); /* light tan, a bit transparent */
+    border: 3px solid #40393C;
+}
+
+header {
+    background-image: url(../images/yarn-ball-needles.gif);
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    border-bottom: none;
+    padding-left: 210px;
+    margin-bottom: 0;
+    min-height: 160px;
+    position: relative; /* set up header so social can be positioned relative to it. */
+}
+header section {
+    display: inline-block;
+}
+
+section#social {
+    width: 57px;
+}
+
+section#social a {
+      display: block;
+      margin: auto;
+      padding: 1px;
+}
+
+/* Navigation formatting */
+nav {
+    background-image: url(../images/yarn-10.gif);
+    background-repeat: repeat-x;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+nav a, nav a:visited {
+    font-family: Cambria, "Times New Roman", serif;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    color: #0A0670; /* dark navy */
+}
+
+/* Content formatting */
+section#content {
+    background: rgba(232,228,235,.95);
+    margin-top: 1em;
+    padding: 0 1em;
+}
+
+section#content:before,
+section#content:after {
+    content: " ";
+    display: table;
+}
+
+section#content:after {
+    clear: both;
+}
+
+section.thumbnail {
+    width: 220px;
+    height: 450px;
+    border: solid 2px #40393C;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer formatting */
+footer {
+    background-image: url(../images/yarn-10.gif);
+    background-repeat: repeat-x;
+    clear: both;
+	font-size: 0.9em;
+    background-color: rgba(190,229,234,0.95);
+    margin-top: 1em;
+    padding-bottom: .25em;
+    padding-top: .5em;
+}
+
+footer p {
+    margin: .5em;
+}
+
+h1, h2, h3 {
+    color: #0A0670; /* dark navy */
+    text-shadow: 1px 1px #40393C; /* same as main text */
+}
+
+/* link formatting */
+a:link {
+	color: #344d73;
+}
+
+a:visited, a:focus, a:hover, a:active {
+	color: #1c5258;
+}
+
+.see-through {
+    opacity: 0.8;
+    float: left;
+	margin:0em 2em 2em 0em;
+}
+
+.bold, strong {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+/* dl formatting */
+dt {
+	color: #445544; /* dark forest green */
+	font-style: italic;
+}
+
+/* table formatting */
+table, th, td {
+    border-style: groove;
+	border-color: #58749B;
+}
+
+th, td {
+	padding: 15px;
+}
+
+caption {
+	color: #445544;
+	font-weight: bold;
+}
+
+/* Bibliography formatting */
+ol.biblio {
+	list-style: none;
+}
+
+ol.biblio li {
+    padding-bottom: .8em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+

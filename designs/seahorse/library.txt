@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="http://fonts.googleapis.com/css?family=Karma:400,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<script src="scripts/member.js"></script>
+<style>
+	.submit {
+		font-size: 24px;
+		background-color: #C32A2A;
+		padding: 5px;
+	}
+</style>
+<script src="scripts/member.js"></script>
+<title>Library</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="member current"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook Page</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+<h1>Library</h1>
+<form method="post" name="library">
+<h2>Select the items you would like to check out</h2>
+<table>
+    <thead>
+    	<tr><td>Check</td><th>Title</th><th>Media</th><th>Description</th>
+    </thead>
+    <tbody>
+    	<tr>     	
+            <td><input type="checkbox" name="item"></td>
+            <td>The Travelin' Diver's Chapbook 2009</td>
+            <td>Book</td>
+            <td>	A compendium of unexpurgated opinion, criticism and commendation of the world's dive resorts and liveaboard boats...
+        </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>The Devil's Teeth</td>
+            <td>Book</td>
+            <td>A true story of obsession and survival among America's great white sharks.</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+			<td>101 Questions about the Seashore</td>
+            <td>Book</td>
+            <td>Illustrated Guide</td>
+        </tr>
+		<tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>130 Feet Down </td>
+            <td>Book </td>
+            <td>Handbook for Hydronauts</td>
+        </tr>
+		<tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Abyss </td>
+            <td>Book </td>
+            <td>Instructional</td>
+        </tr>
+		<tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>American Seashells </td>
+            <td>Book </td>
+            <td>Illustrated Guide</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Amphibian </td>
+            <td>Book </td>
+            <td>Adventures of a Professional Diver</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Beachcombing the Pacific </td>
+            <td>Book </td>
+            <td>Instructional</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Beginning Underwater Photography </td>
+            <td>Book </td>
+            <td>A must for the Nikonos user</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Beneath the Sea </td>
+            <td>Book </td>
+            <td>A sampling of diving adventures</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Between Pacific Tides </td>
+            <td>Book </td>
+            <td>Biology book</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Bonaire and Curacao </td>
+            <td>Book </td>
+            <td>Guide Book</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Business of Diving</td>
+            <td>Book</td>
+            <td>Instructional</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Common Seashore Life</td>
+            <td>Book</td>
+            <td>Illustrated Guide</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Cooking with emphasis on scallops</td>
+            <td>Book </td>
+            <td>Cookbook</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+            <td>Crab and Abalone </td>
+            <td>Book </td>
+            <td>Cookbook</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="item"></td>
+        	<td>	Dangerous Sea Creatures</td>
+            <td>Book</td>
+            <td>Coffee table book</td>
+        </tr>
+    </tbody>
+</table>
+<input type="submit" value="Check Out" class="submit">
+</form>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

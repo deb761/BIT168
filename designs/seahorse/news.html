@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="scuba dive diving club news">
+<meta name="description" content="News for the Seahorse Dive Club.">
+<link href="http://fonts.googleapis.com/css?family=Karma:400,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<style>
+	.strike {
+		text-decoration: line-through;
+	}
+</style>
+<script src="scripts/member.js"></script>
+<title>News</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li class="current"><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="joinus.html">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+<h1>News</h1>
+<p>Welcome to the SeaHorse Dive Club News.  Here you'll find articles about club events, cool dives your fellow members did and stuff they claimed to have seen, wild stories, nature stories, technology... You know, the kind of stuff you'd hear while you're standing around the compressor getting your tanks filled.  "Did you guys see the orca?!  No?  But it was right there!"  If you have your own <span class="strike">whopper</span>, I mean "story" to tell, let us know.  Send it to <a href="mailto:editor@seahorsediveclub.com">editor@seahorsediveclub.com</a> and you might see it right here.</p>
+<article class="post">
+	<h2>Wine Dive - August 27<sup>th</sup></h2>
+    <h3>posted Aug 8, 2015, 9:54 PM by Ed Gullekson</h3>
+    <p>When - Thu, August 27, 5:30pm – 8:00pm<br>
+	Where - Alki Pipeline, West Seattle (map)<br>
+	Description - Tide is high enough to dive the pipeline. Water Entry about 5:45 PM. Show up early to get a great parking spot. The club will provide sodas and hot dogs for participants, and a cache of wine bottles and Soda-Markers underwater.</p>
+</article>
+<article class="post">
+	<h2>Beer Dive Report</h2>
+    <h3>posted Jul 25, 2015, 5:36 PM by Ed Gullekson</h3>
+    <p>The annual Beer Dive at Edmonds UW Park was this last Thursday. Brian Heath runs these summer outdoor events and always does a great job of placing the beer &amp; soft drink markers. Plus he is the chef for the evening after the dive. Seven divers showed up to chase beer on the bottom. What also showed up was a north breeze, enough to put up a 1 foot chop. And you know what that means at shallow Edmonds - reduced visibility - yup 3 to 5 feet (I am being generous). Well, we d...ivers left 9 beers out there. So if you want go back and find them. At the end of the dive, the wind dropped and it got real nice, but we were done diving and munched a talked. Thanks to Brian and to all who enjoyed the evening with us - George Dive Meister, Randy Pedersen, Byron Kim, David Wakeley, Pieter Booth, and Dan Davis. Next month is the Wine Dive at Alki Pipeline on 8/27.</p>
+</article>
+<article class="post">
+	<h2>Dive Around the Clock</h2>
+    <h3>posted Jul 14, 2015, 5:22 PM by Ed Gullekson   [ updated Jul 14, 2015, 5:26 PM ]</h3>
+    <p>The annual fundraising event called Dive Around the Clock is this coming weekend, starting Friday at 4 PM and ending at the same time on Saturday.  It is for a great cause.  Here is a link to their site so you can get more info and sign up. <a href="http://divearoundtheclock.com/">http://divearoundtheclock.com/</a></p>
+</article>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

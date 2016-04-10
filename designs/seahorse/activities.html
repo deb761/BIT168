@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="scuba dive diving club activities">
+<meta name="description" content="The Seahorse Dive Club hosts club meetings, dives, picnics, a photo contest, and dive trips.">
+<link href="http://fonts.googleapis.com/css?family=Karma:400,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<script src="scripts/member.js"></script>
+<title>Template</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li class="current"><a href="activities.html">Activities</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+<h1>Activities</h1>
+<p>One of the key objectives of the Sea Horse Dive Club is to promote and encourage the enjoyment of diving by our member. To achieve that end, we sponsor many different activities during the year, such as: local dives, monthly club meetings, club trips to regional dive destinations, dive travel excursions to exotic (usually warm) destinations, and our annual club party. Diving, after all is a social sport, and these events help you meet new dive buddies.</p>
+<p>
+We encourage everybody to come out and participate. Many of these events are free, and everybody is welcome, members and non-members alike. If there's an event you think we should have that you think would be fun, let us know! We're always looking for new ideas.</p>
+<h2>Club Meetings</h2>
+<p>In the summer we hold our monthly meetings outside, combined with a fun dive at a local dive spot. When the skies turn dark and the weather turns cold, the SeaHorses head indoors to get together at meetings featuring guest speakers and interesting presentations.  Watch the News for information on upcoming meetings and speakers.</p>
+<h2>Randy Glenn Memorial Photo and Art Contest</h2>
+<p>The Randy Glenn Memorial Photo and Art Contest is held every October and celebrates the creativity of our club members. There are lots of categories in which to compete. You don't even need an underwater camera; there are categories for above water photos as well.  There are swell prizes for the winners.  Check out the contest page for details on the categories and rules.</p>
+<h2>Local Dives</h2>
+<p>Club members lead many dives to local dive spots. There is a club dive every Wednesday, plus assorted boat dives using club boats. In the summer, our club meetings are fun dives at a local dive spots.  In the Fall, we have our annual Underwater Pumpkin Carving Contest with our Friends the Marker Buoys, at Alki.</p>
+<p>
+Watch the Calendar and News for notice of upcoming club diving opportunities.</p>
+<h2>Regional Dives</h2>
+<p>Every year the club sponsors outings to regional dive spots like Neah Bay, Bowman Bay, and Reid Harbor in the San Juans. These trips are usually 3 or 4 day affairs with good diving, camping, cookouts and potlucks.</p>
+<h2>Club Picnics</h2>
+<p>Every year the club has two picnics to give everybody a chance to get together and party plus fit in a dive. Not that scuba divers need an excuse to party...   Watch the Calendar and News for notice of social events.</p>
+<h2>Dive Travel</h2>
+<p>Nearly every year the club will travel to some warm locale for warm water, sunshine, and visibility greater than 10 feet. Often that trip is to Cozumel Mexico, but we've gone other places as well. </p>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

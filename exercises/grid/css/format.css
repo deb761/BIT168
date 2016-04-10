@@ -1,0 +1,36 @@
+/* Stylin with CSS Third Edition, Figure 5.13 format styles without layout (for use with 960 Grid) */
+* {margin:0; padding:0;}
+body {font-family:helvetica, arial, sans-serif; }
+body>div {border:1px solid #6b5678;	}
+header {background:#a292ac;	padding:3px 10px;}
+header h1 {	font:2.5em Metrophobic;	color:#fff;}
+nav{background:#f7923a;	padding:3px 10px;}
+section#branding img {display:block;}
+/* FEATURE AREA */	
+section#feature_area  {
+	background:#fff;
+	border-top:4px solid #f7be84;
+	border-bottom:4px solid #f7be84;
+	}
+section#feature_area article{padding:10px 0;}
+section#feature_area article p {
+	padding:5px;
+	border:5px solid;
+	font: 300 1.15em/1em 'Open Sans';
+	text-align:center;
+	color:#616161;
+	}
+section#feature_area article:nth-child(1) p {border-color:#d7dd6f;}
+section#feature_area article:nth-child(2) p {border-color:#f6dec5;}
+section#feature_area article:nth-child(3) p {border-color:#d1d8e4;}
+/* PROMO AREA */
+#promo_area  article {padding:10px 0;}
+#promo_area article p {
+	padding:10px;
+	background:#e5e8ed;
+	font:300 1em/1.5em 'Open Sans Condensed';
+	color:#616161;
+	}
+footer {text-align:center;background:#6b5678;clear:both;}
+footer p {font:600 .7em 'Open Sans';letter-spacing:-.05em;color:#fff;}
+footer a {font: 700 italic 1em 'Open Sans';color:#f7be84;text-decoration:none;}

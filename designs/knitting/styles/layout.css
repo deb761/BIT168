@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/* Layout Styles */
+
+.photo-full {
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 480px) {
+
+	section#social {
+		position: absolute;
+		top: 3px;
+		right: 3px;
+	}
+footer p:last-child {
+    text-align: right;
+}
+
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 600px. */
+@media only screen and (min-width: 600px) {
+
+footer p {
+    display: inline-block;
+    min-width: 47%;
+}
+}
+
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 800px. */
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 900px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
+/* Print */
+@media only print {
+
+	#social, nav {
+		display: none;
+	}
+	
+}
+
+
+
+
+

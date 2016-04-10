@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/format.css">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="../styles/cookie.css">
+    <link rel="stylesheet" type="text/css" href="../styles/animate.css">
+	<script type="text/javascript" src="scripts/date.js"></script>
+    <script src='http://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script src='../scripts/jquery.keyframes.min.js'></script>
+    <script type='text/javascript' src='../scripts/jquery.animateSprite.min.js'></script>
+	<script>
+	$(document).ready(function(){
+		function showHappy() {
+			$("#happy").addClass("happy").css('opacity', 1);
+
+			$(".happy").animateSprite({
+				fps: 3,
+				animations: {
+					happy: [0, 1, 2, 3, 4, 5, 6],
+				},
+				loop: true,
+				complete: function(){
+					// use complete only when you set animations with 'loop: false'
+				}
+			});
+		}
+		function makeHappy(frames) {
+			$(".fix").animateSprite({
+				fps: 1.5,
+				animations: {
+					frames: frames,
+				},
+				loop: false,
+				complete: function(){
+					// use complete only when you set animations with 'loop: false'
+					showHappy();
+				}
+			});
+			$('#suggestions').removeClass('slideInLeft').addClass('slideOutLeft');
+			$('figure').addClass('happy-cookie');
+			$('figcaption').text("Happy Cookie");
+        }
+		$("#food").click(function(){
+			$("#happy-food").addClass("fix");
+			makeHappy([0, 1, 2, 4, 5, 3, 7, 8]);
+		});
+		$("#toy").click(function(){
+			$("#happy-toy").addClass("fix");
+			makeHappy([0, 1, 2, 4, 5]);
+		});
+		$("#walk").click(function(){
+			$("#happy-walk").addClass("fix");
+			makeHappy([0, 1, 2, 3, 4]);
+		});
+	});
+	</script>
+    <title>Deborah Engelmeyer and Cookie</title>
+</head>
+
+<body onLoad="document.getElementById('date').innerHTML=document.lastModified;">
+	<div id="front">
+    <header>
+		<h1>A Dog's Life</h1>
+    </header>
+    <nav>
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../exercises/index.html">Exercises</a></li>
+			<li><a id="current" href="index.html">Assignments</a></li>
+			<li><a href="../designs/index.html">Designs</a></li>
+			<li><a href="../resume.html">Resume</a></li>
+		</ul>
+    </nav>
+    <section id="content">
+		<div id="suggestions" class="animated slideInLeft">
+			<h2>Cookie looks sad.</h2>
+			<h3>What's wrong with Cookie?</h3>
+			<p>Does she need:</p>
+			<ul>
+				<li id="food">Food?</li>
+				<li id="toy">A toy?</li>
+				<li id="walk">A walk?</li>
+			</ul>
+		</div>
+		<figure>
+			<figcaption>Cookie</figcaption>
+			<img src="../images/cookie/cookie-sad.png" alt="sad cookie">				
+			<div id="happy-food"></div>
+			<div id="happy-toy"></div>
+			<div id="happy-walk"></div>
+			<div id="happy"></div>
+			<div id="frame"></div>
+		</figure>
+	</section>
+    <footer>
+		<div>
+			<p>Copyright &copy; Deborah Engelmeyer 2016</p>
+			<p>Last modified: <span id="date"></span></p>			
+		</div>
+		<div id="contact">
+			<p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+			<a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="../images/FB-f-Logo__blue_29.png" alt="Facebook"/></a>
+			<a id="linkedin" href="https://www.linkedin.com/in/deborahengelmeyer"><img src="../images/In-2C-28px-TM.png" alt="LinkedIn"/></a>		
+		</div>
+    </footer>
+	</div>
+</body>
+</html>

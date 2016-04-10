@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="scuba dive diving club about">
+<meta name="description" content="The Seahorse Dive Club is a Boeing Recreation club founded in 1958 and dedicated to sharing our love of SCUBA diving.">
+<link href="http://fonts.googleapis.com/css?family=Karma:400,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<script src="scripts/member.js"></script>
+<title>Template</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+    <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li><a href="membership.html">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+<h1>About the Seahorses</h1>
+<h2>SeaHorse Dive Club: 1958 - Today</h2>
+<p>The first Northwest sport divers made their own wetsuits, poured their own weights and taught themselves how to scuba dive. Their flippers were as stiff as plywood, as heavy as plaster. And their rigid rubber masks leaked most of the time. They were enthusiastic participants in a burgeoning sport that relied on unproved technology and immature science. They accepted irrational risks and forged life-long friendships while plumbing the dark, unforgiving depths... This was the beginning of the SeaHorse Dive Club.Today, the SeaHorse Dive Club is one of the largest SCUBA clubs in the Northwest. </p>
+
+<p>The goal today is the same as in 1958: to promote the enjoyment of diving by Boeing employees, their families, and contribute to the local diving community. The club sponsors a number of activities from local dives, to dive travel to regional and worldwide locations, to club meetings featuring excellent speakers from the diving and marine community, to social events like club picnics and parties. Most will say that the biggest benefit of being a member isn't the free air from our compressors or using the club boats, it is the camaraderie of other Boeing workers who also like to dive.</p>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

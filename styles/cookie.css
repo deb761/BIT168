@@ -1,0 +1,85 @@
+/* This stylesheet is used to animate the Cookies story */
+
+figure {
+    float: right;
+    width: 720px;
+    margin: 20px;
+    position: relative;
+    transition: all ease 2s;
+}
+
+figure.happy-cookie {
+    float: none;
+    margin: auto;
+}
+figure img {
+    border-radius: 360px;
+}
+
+figcaption {
+    font-family: DancingScript, cursive;
+    font-size: 2em;
+    color: #032610; /* deep forest green to pull in color from trees */
+    text-shadow: 1px 1px #060829; /* same as main text */
+    text-align: center;
+    margin: 0.2em 0;
+}
+figure #frame {
+    border: solid 10px #0a0670;
+    border-radius: 360px;
+    position: absolute;
+    bottom: 0;
+    height: 470px;
+    width: 710px;
+    z-index: 1;
+}
+/* Define the problem statement and suggestions list */
+#suggestions {
+    position: absolute;
+    bottom: 150px;
+    right: 780px;
+}
+#suggestions ul:hover {
+    cursor: pointer;
+}
+#suggestions li:hover {
+     font-weight: bold;
+     font-size: 1.5em;
+}
+
+#content {
+    overflow: auto; /* make sure the figure is encompassed within the content section */
+    position: relative; /* provide a positioning context for the divs */
+}
+
+.happy, .fix {
+    width: 272px;
+    height: 180px;
+    background-image: url(../images/cookie/happy.jpg);
+    transform: scale(2.65);
+    transform-origin: 136px 90px;
+    position: absolute;
+    bottom: 155px;
+    right: 224px;
+    border-radius: 90px;
+    opacity: 1;
+    animation: happy 1s;
+}
+
+[id~="happy"] {
+    opacity: 0;
+}
+#happy-food {
+    background-image: url(../images/cookie/food.jpg);
+}
+#happy-toy {
+    background-image: url(../images/cookie/toy.jpg);    
+}
+#happy-walk {
+    background-image: url(../images/cookie/walk.jpg);    
+}
+
+@keyframes happy {
+    0% {opacity:  0;}
+    100% {opacity: 1;}
+}

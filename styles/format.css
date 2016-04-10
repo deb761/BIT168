@@ -1,0 +1,226 @@
+/* Overall formatting */
+@font-face {
+    font-family: 'DancingScript';
+    src: url('../dancing-script-ot/DancingScript-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+	}
+html {
+    background-image: url(../images/sky.png);
+    background-color: #6c95d5;/*#93AFD8;*/
+}
+
+body {
+    padding: 2.5% 2.5% 2%;
+    font: 1.2em 'Lora', Palatino, serif;
+    /*font-family: Calibri, Arial, Helvetica, sans-serif;*/
+	color: #060829; /* nearly black with a hint of blue */
+    /*font-size: 1.2em;*/
+    background-image: url(../images/trees.gif);
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    max-width: 1280px;
+    margin: auto;
+}
+
+header, nav {
+    background-color: rgba(217,218,228,0.45); /* light blue-gray, a bit transparent. #d9dae4 */
+}
+
+header {
+    border-bottom: none;
+    margin-bottom: 0;
+    text-align: center;
+    min-height: 80px;
+    position: relative; /* set up header so social can be positioned relative to it. */
+    border-radius: 5px;
+}
+header section {
+    display: inline-block;
+}
+
+
+/* Navigation formatting */
+nav {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-top: .5em;
+    border-radius: 5px;
+}
+
+nav h2 {
+    display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 2px;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+nav li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0.4em 0;
+}
+
+nav a:link, nav a:visited {
+    font-family: Cambria, "Times New Roman", serif;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #0A0670; /* dark navy */
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+}
+/* Sub-menu formatting */
+nav ul ul a {
+    display: block;
+}
+nav>ul>li>ul {
+    max-width: 10em;
+    position: absolute;
+    display: none;
+}
+nav>ul>li>ul>li {
+    display: block;
+    background-color: rgb(217,218,228);
+    border-top: solid 1px;
+    border-color: #0A0670; /* dark navy */
+    margin: 0;
+}
+/* Show the sub-menus when the parent is hovered over */
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav #current {
+    background-color: rgb(217,218,228);
+    color: #0A0670; /* dark navy */
+    border: solid 2px;
+}
+
+nav a:hover, nav a:active {
+    background-color: rgb(190,229,234);
+    color: #0A0670; /* dark navy */
+    border: solid 2px;
+}
+
+nav>ul>li>ul>li>a:link, nav>ul>li>ul>li>a:visited {
+    text-align: left;
+    color: #0A0670; /* dark navy */
+    background-color: rgb(217,218,228);
+    font-size: 0.8em;
+}
+
+/* Content formatting */
+section#content {
+    background-color: rgba(232,228,235,.25);
+    /*background-color: rgba(255,255,255,0.33);*/
+    margin-top: 1em;
+    padding: 0 1em 0.1em 1em;
+    border-radius: 5px;
+}
+
+section#content:after {
+    clear: both;
+}
+
+section.thumbnail {
+    max-width: 220px;
+    border: solid 2px #40393C;
+    display: inline-block;
+}
+
+/* Footer formatting */
+footer {
+	font-size: 0.9em;
+    background-color: rgba(190,229,234,0.75);
+    margin-top: 1em;
+    padding-bottom: .25em;
+    padding-top: .5em;
+    border-radius: 5px;
+    margin-bottom: 300px;
+}
+
+footer p {
+    margin: .5em;
+}
+
+#contact > * {
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+}
+h1, h2, h3 {
+    font-family: DancingScript, cursive;
+    font-size: 2em;
+    color: #032610; /* deep forest green to pull in color from trees */
+    text-shadow: 1px 1px #060829; /* same as main text */
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+}
+
+/* link formatting */
+a:link {
+	color: #344d73;
+}
+
+a:visited, a:focus, a:hover, a:active {
+	color: #1c5258;
+}
+
+.see-through {
+    opacity: 0.8;
+    float: left;
+	margin:0em 2em 2em 0em;
+}
+
+.bold, strong {
+    font-weight: bold;
+}
+
+.slant {
+    font-style: italic;
+}
+
+/* dl formatting */
+dt {
+	color: #445544; /* dark forest green */
+	font-style: italic;
+}
+
+/* table formatting */
+table, th, td {
+    border-style: groove;
+	border-color: #58749B;
+}
+
+th, td {
+	padding: 15px;
+}
+
+caption {
+	color: #445544;
+	font-weight: bold;
+}
+
+img { max-width: 100%; }
+
+/* Bibliography formatting */
+ol.biblio {
+	list-style: none;
+}
+
+ol.biblio li {
+    padding-bottom: .8em;
+	margin-left: 2em;
+	text-indent: -2em;
+}
+

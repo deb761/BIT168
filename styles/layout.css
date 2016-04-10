@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* Layout Styles */
+
+.photo-full {
+	max-width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	footer {
+		margin-bottom: 0;
+		margin-top: 250px;
+		position: relative;
+	}
+
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 600px. */
+@media only screen and (min-width: 720px) {
+
+	nav ul {
+		width: 504px;
+		margin: auto;
+	}
+
+	footer div {
+		display: inline-block;
+		vertical-align: top;
+		width: 47%;
+	}
+	#contact {
+		position: absolute;
+		right: 0;
+		width: 22em;
+	}
+}
+
+
+/* The logic is only. The type is screen. The feature: value is min-width: 800px. */
+@media only screen and (min-width: 800px) {
+
+}
+
+@media only screen and (min-width: 900px) {
+	footer {
+		margin-top: 300px;
+	}
+}
+@media only screen and (min-width: 1200px) {
+
+}
+/* Print */
+@media only print {
+
+	#facebook, #linkedin, nav {
+		display: none;
+	}
+	
+}
+
+
+
+
+

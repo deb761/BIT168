@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="styles/format.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+	<script type="text/javascript" src="scripts/date.js"></script>
+    <script src='http://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script src='scripts/jquery.keyframes.min.js'></script>
+    <script type='text/javascript' src='scripts/animate.js'></script>
+    <title>Deborah Engelmeyer Resume</title>
+    <style>
+        ol, ul {
+            list-style-type: circle;
+            }
+        img[alt~='expand']{
+            position: relative;
+            top: 5px;
+			height: 20px;
+        }
+        img[alt~='contract']{
+            position: relative;
+            bottom: 4px;
+			width: 20px;
+            /*left: -32px;*/
+            display: none;
+        }
+        h3:hover, #education h2, #work h2 {
+            cursor:pointer;
+        }
+        #content ul, #content ol {
+            display: none;
+        }
+        #content ul.expanded, #content ol.expanded {
+            display: block;
+        }
+		h3 {
+			margin-left: 1em;
+		}
+		h3+ul, h3+ol {
+			margin-left: 2em;
+		}
+		/* organize the resume sections */
+		section div.block {
+			border: solid 2px;
+		    border-radius: 5px;			
+			display: inline-block;
+			padding: 0 1em;
+			margin: 10px;
+			background-color: rgba(190,229,234,0.25);
+		}
+		#skills {
+			width: 17em;
+			vertical-align: top;
+		}
+		#notable {
+			display: inline-block;
+			width: 65%;
+			margin: 10px 0 0 0;
+			border: none;
+		}
+		#notable div {
+			width: 100%;
+			vertical-align: top;
+			margin: 0 0 20px 0;
+		}
+		#education {
+			display: block;
+			width: 40em;
+			margin: auto;
+			max-width: 90%;
+		}
+		@media only print {
+			#content ul, #content ol {
+				display: block;
+			}
+			img { display: none; }
+			#skills { width: 10em; }
+		}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("img").parent().click(function(){
+				var icon = $(this).children("[alt~='expand']");
+				if (!$(this).next().hasClass("expanded")) {
+					$(this).next().addClass("expanded");
+					icon.hide(500);
+					icon.next().show(500);
+                }
+				else
+				{
+					$(this).next().removeClass("expanded");
+					icon.next().hide(500);
+					icon.show(500);
+				}
+            });
+        });
+    </script>
+</head>
+
+<body onLoad="document.getElementById('date').innerHTML=document.lastModified;">
+	<div id="front">
+    <header>
+		<h1>Deborah Engelmeyer</h1>
+		<p>3829 NE 155th St<br>Lake Forest Park, WA 98155</p>
+    </header>
+    <nav>
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="exercises/index.html">Exercises</a>
+				<ul>
+					<li><a href="exercises/sandwich.html">Sandwich Fixin's</a></li>
+					<li><a href="exercises/veggies/index.html">Veggies List</a></li>
+					<li><a href="exercises/positioning/index.html">Positioning Boxes</a></li>
+					<li><a href="exercises/lincoln/lincoln.html">Lincoln's Address</a></li>
+					<li><a href="exercises/pinwheel/start.html">Pinwheel Animation</a></li>
+					<li><a href="exercises/bunny-love/start.html">Bunny Love</a></li>
+					<li><a href="exercises/grid/index.html">Grid Layout</a></li>
+					<li><a href="exercises/popup/figure6.24.html">Popups</a></li>
+					<li><a href="exercises/responsive/responsive.html">Responsive Design</a></li>
+				</ul>
+			</li>
+			<li><a href="assignments/index.html">Assignments</a>
+				<ul>
+					<li><a href="assignments/portfolio-design.html">Portfolio Design</a></li>
+					<li><a href="assignments/interactive.html">Interactive Design</a></li>
+					<li><a href="assignments/cookie.html">Interactive Story</a></li>
+				</ul>
+			</li>
+			<li><a href="designs/index.html">Designs</a>
+				<ul>
+					<li><a href="designs/seahorse/index.html">Seahorse Dive Club Site</a></li>
+					<li><a href="designs/knitting/index.html">Knitting Site</a></li>
+				</ul>
+			</li>
+			<li><a id="current" href="resume.html">Resume</a></li>
+		</ul>
+    </nav>
+    <section id="content">
+	<h2>Career Objective</h2>
+    <p>Software Engineer</p>
+	<h2>Summary of Qualifications</h2>
+	<p>Over 15 years experience in designing, developing and implementing innovative solutions for engineering problems.  Recognized for quickly learning programming languages and protocols and delivering software on or ahead of schedule.</p>
+	<div id="skills" class="block">
+	<h2>Computer and Technical Skills</h2>
+	<h3><img src='images/expand.png' alt='expand languages'><img src='images/contract.png' alt='contract languages'>Programming Languages</h3>
+	<ul>
+		<li>Ada 95 (8 yrs)</li>
+		<li>FORTRAN (3 yrs)</li>
+		<li>C (4 yrs)</li>
+		<li>C++ (4 yrs)</li>
+		<li>C# (3 yrs)</li>
+		<li>Java</li>
+	</ul>
+	<h3><img src='images/expand.png' alt='expand scripts'><img src='images/contract.png' alt='contract scripts'>Scripting Languages</h3>
+	<ul>
+		<li>Python (2 yrs)</li>
+		<li>Khorn shell (3 yr)</li>
+		<li>Javascript</li>
+		<li>SQL</li>
+		<li>HTML, CSS</li>
+	</ul>
+	<h3><img src='images/expand.png' alt='expand environments'><img src='images/contract.png' alt='contract environments'>Programming Environments</h3>
+	<ul>
+		<li>Unix (5 yrs)</li>
+		<li>Linux (1 yr)</li>
+		<li>Windows (6 yrs)</li>
+		<li>VAX (2 yrs)</li>
+	</ul>
+	<h3><img src='images/expand.png' alt='expand APIs'><img src='images/contract.png' alt='contract APIs'>Programming APIs</h3>
+	<ul>
+		<li>Gnat (3 yrs)</li>
+		<li>Greenhills (4 yrs)</li>
+		<li>ICAD (2 yrs)</li>
+		<li>Visual Studio (3 yrs)</li>
+		<li>Microsoft ASP.Net</li>
+	</ul>
+	<h3><img src='images/expand.png' alt='expand version'><img src='images/contract.png' alt='contract version'>Version Control</h3>
+	<ul>
+		<li>Clearcase (8 yrs)</li>
+		<li>CVS (2 yrs)</li>
+		<li>Subversion (2 yrs)</li>
+		<li>Git (2 yrs)</li>
+	</ul>
+	</div>
+	<div id="notable">
+	<div id="experience" class="block">
+	<h2>Professional Experience</h2>
+	<h3><img src='images/expand.png' alt='expand programming'><img src='images/contract.png' alt='contract programming'>Computer Programming</h3>
+	<ul>
+		<li>Designed and developed software utilizing C, C++, C#, Ada 95, FORTRAN, LISP, Tcl/Tk, and Python.  Supported integration tests.  <em>Delivered software on or ahead of schedule.</em></li>
+		<li>Designed, developed, and deployed user applications to calculate loads data and process test data.
+		<em>Reduced time to calculate and process data by 75%.</em></li>
+		<li>Designed and developed a test interface using C# in Visual Studio to simulate operational inputs and see how the display reacted to inputs.  <em>Provided a easy to use test platform.</em></li>
+		<li>Overhauled the design of software in embedded avionics systems written in Ada 95 and C#.
+		<em>Reduced the lines of software required by several hundred lines.</em></li>
+	</ul>
+	<h3><img src='images/expand.png' alt='expand SE'><img src='images/contract.png' alt='contract SE'>Software Engineering</h3>
+	<ul>
+		<li>Automated code documentation using Visual Studio and DOORS DXL scripting language.</li>
+		<li>Standardized build processes across applications and automated the build process using Python scripting within WinCVS.</li>
+	</ul>
+	</div>
+	<div id="work" class="block">
+	<h2><img src='images/expand.png' alt='expand work'><img src='images/contract.png' alt='contract work'>Work History</h2>
+	<ol>
+		<li>Integration Engineer, The Boeing Company, Seattle, WA, 2015  </li>
+		<li>Test/Systems Engineer, The Boeing Company, Seattle, WA, 2013 - 2014</li>
+		<li>Senior Embedded Software Engineer, The Boeing Company, Seattle, WA, 2012 - 2013</li>
+		<li>Software Engineer, Loads and Dynamics Group, Wichita, KS 2011 - 2012</li>
+		<li>Senior Embedded Software Engineer, Aeroflex Inc., Wichita, KS, 2010</li>
+		<li>Senior Embedded Software Engineer,  The Boeing Company, Wichita, KS, 2010 </li>
+		<li>Senior Software Engineer, BAE Systems, Nashua, NH, 2009</li>
+		<li>Senior Embedded Software Engineer, Aeroflex Inc., Wichita, KS, 2006 – 2008</li>
+		<li>Embedded Software Engineer, The Boeing Company, Wichita, KS, 2000 – 2006</li>
+	</ol>
+	</div>
+	</div>
+	<div id="education" class="block">
+	<h2><img src='images/expand.png' alt='expand education'><img src='images/contract.png' alt='contract education'>Education</h2>
+	<ol>
+		<li>Web Applications Classes, Cascadia Community College </li>
+		<li>M.S. Aerospace Engineering, Missouri University of Science and Technology</li>
+		<li>B.S. Aerospace Engineering, Missouri University of Science and Technology</li>
+	</ol>
+	</div>
+	</section>
+    <footer>
+		<div>
+			<p>Copyright &copy; Deborah Engelmeyer 2016</p>
+			<p>Last modified: <span id="date"></span></p>			
+		</div>
+		<div id="contact">
+			<p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+			<a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="images/FB-f-Logo__blue_29.png" alt="Facebook"/></a>
+			<a id="linkedin" href="https://www.linkedin.com/in/deborahengelmeyer"><img src="images/In-2C-28px-TM.png" alt="LinkedIn"/></a>		
+		</div>
+    </footer>
+	</div>
+</body>
+</html>

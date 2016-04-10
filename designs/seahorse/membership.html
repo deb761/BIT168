@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="keywords" content="scuba dive diving club membership">
+<meta name="description" content="Become a member of the Seahorse Dive Club.">
+<link href="http://fonts.googleapis.com/css?family=Karma:400,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/typography.css">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<link rel="stylesheet" type="text/css" href="styles/effects.css">
+<script src="scripts/member.js"></script>
+<title>Template</title>
+</head>
+
+<body onload="updateMemberElements()">
+<header>
+<img src="images/logo.png" alt="Seahorse Logo">
+<div id="letterhead">
+	<h1>SeaHorse Dive Club</h1>
+    <h2>Boeing Employees SCUBA Club of Seattle</h2>
+</div>
+</header>
+<div class="clearfix">
+<form action="http://www.programajama.com/cgi-bin/echo1.cgi" method="post" id="login">
+	<h2>Login:</h2>
+    <label for="userid">User ID:</label>
+    <input type="text" id="userid" name="userid" required><br>
+    <label for="passwd">Password:</label>
+     <input type="password" id="passwd" name="passwd" required onkeypress="login(event)">
+</form>
+<div id="logout" class="member">
+	<a href="#" onclick="logout()">Logout:</a>
+</div>
+<nav id="mainNav">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li class="current"><a href="membership.html" class="current">Membership</a></li>
+        <li class="member"><a href="library.html">Library</a></li>
+        <li id="memform"><a href="memberform.html">
+        	<img src="images/Join-SeaHorses-Logo-196x150.png" alt="Join Seahorses"></a></li>
+        <li><a href="https://www.facebook.com/groups/375392171563/">
+        	<img src="images/FB-f-Logo__blue_29.png" alt="Facebook logo">Facebook</a></li>
+    </ol>
+</nav>
+
+<section id="content">
+    <h1>Membership Information</h1>
+    <h2>Club Purpose</h2>
+    <p>The SeaHorse Dive Club is an organization dedicated to promoting the enjoyment of SCUBA diving and other related activities for Boeing employees, their families, and other eligible people. Our goal is to help you get out and dive more often, and enjoy it more. To do that, we sponsor local dives, monthly meetings and programs, social events, and dive excursions to exciting locations both in the region (B.C., Neah Bay, San Juan Islands) and further away, such as our regular escape to Cozumel.</p>
+    <p>
+    The club provides cylinder visual inspection at a reduced price for members.</p>
+    <h2>Member Benefits:</h2>
+    <ul>
+        <li>Reduced price cylinder visual inspections</li>
+        <li>Social events and local dives</li>
+        <li>Subscriptions to popular dive magazines and access to other dive related materials through our Club Library</li>
+        <li>Discounts at local dive shops</li>
+    </ul>
+	<h2>What Does It Cost?</h2>
+       <table class="dues">
+        <tr><td>Initiation (one-time fee for new members)</td><td class="number">$10</td></tr>
+        <tr><td>Regular Membership (individual employee, contractor, or supplier)</td><td class="number">$25</td>
+        </tr>
+        <tr><td>Family Membership (includes spouse and dependent children of member)</td>
+            <td class="number">$35</td>
+        </tr>
+        <tr><td>Associate Membership (former employee, qualifying family member)</td><td class="number">$35</td>
+        </tr>
+        <tr><td>Intern or Co-op student (initiation fee waived)</td><td class="number">$10</td>
+        </tr>
+        <tr><td>Retiree membership (retired per Boeing rules)</td><td class="number">$5</td>
+        </tr>
+        <tr><td>Late fee (renewing after May 1st)</td><td class="number">$5</td>
+        </tr>
+       </table>
+
+	<h2>Who Can Join?</h2>
+	<p>Current Boeing employees and their immediate family members, retirees, and and some others are eligible to join.  Since this is a Boeing sponsored recreation club, eligibility requirements are defined by Boeing Recreation and PRO-99.</p>
+	<h2>Membership &amp; Liability Release Form</h2>
+	<h2>How do I sign up?</h2>
+    <p>If you meet the eligibility requirements, simply fill-out the Membership &amp; Liability Release Form, and send it in with your payment to our Membership Coordinator (address listed on the form).  Eligible non-Boeing persons wishing to join will also have to fill-out the Boeing Recreation Associate Members Form and send it in with your application.</p>
+	<h2>Questions?</h2>
+	<p>If you have any questions about being a club member, please contact our membership coordinator by sending an e-mail to <a href="mailto:membership@seahorsediveclub.com">membership@seahorsediveclub.com</a>.</p>
+</section>
+</div>
+<footer>
+<p>Disclaimer: The views and opinions expressed on this site are the responsibility of the SeaHorse Dive Club or its members, and do not reflect the views or opinions of The Boeing Company.</p>
+<p><a href="contact.html">Contact Us</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* CSS Document for laying out the Seahorse pages */
+
+/* Clearfix class to handle floating elements */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* use element member class to control visibility for members that are logged in */
+.member {
+	display: none;
+}
+
+
+@media only screen and (min-width: 480px) {
+	#mainNav {
+		float: left;
+	}
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 650px. */
+@media only screen and (min-width: 650px) {
+	header {
+		position: relative;
+	}
+
+	#letterhead {
+		position: absolute;
+		top: 60px;
+		left: 255px;
+	}
+	
+	#login, #logout {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+	}
+	
+	#content {
+		width: 60%;
+		float: left;
+	}
+	
+	#aside {
+		float: left;
+	}
+	
+	figure {
+		float: right;
+		padding-right: 0;
+		margin-right: 0;
+		max-width: 100%;
+	}
+	
+	figcaption {
+		font-style: italic;
+		font-size: 0.8em;
+	}
+
+}
+
+/* The logic is only. The type is screen. The feature: value is min-width: 480px. */
+@media only screen and (min-width: 800px) {
+
+	section#content {
+		width: 70%;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	
+}
+/* Print */
+@media only print {
+
+	#social, nav {
+		display: none;
+	}
+	
+	section#content {
+			float: left;
+			width: 90%;
+	}
+}

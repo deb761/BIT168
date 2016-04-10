@@ -1,0 +1,15 @@
+/* Block colors for layout exercise */
+
+header,nav,section,sidebar,footer {
+	text-align: center;
+	border: gray solid thin;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+header { background-color:#d8930a;}
+nav{background-color: #11af1f;}
+#sidebar{background-color:#ebff6d;}
+section{ background-color: #76aaf3;}
+footer{ background-color: #676767;}
