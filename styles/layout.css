@@ -8,7 +8,6 @@
 @media only screen and (min-width: 600px) {
 	footer {
 		margin-bottom: 0;
-		margin-top: 250px;
 		position: relative;
 	}
 
@@ -18,7 +17,7 @@
 @media only screen and (min-width: 720px) {
 
 	nav ul {
-		width: 504px;
+		width: 720px;
 		margin: auto;
 	}
 
@@ -41,9 +40,6 @@
 }
 
 @media only screen and (min-width: 900px) {
-	footer {
-		margin-top: 300px;
-	}
 }
 @media only screen and (min-width: 1200px) {
 

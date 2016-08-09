@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Deborah Engelmeyer">
+	<meta name ="viewport" content ="width=device-width, initial-scale = 1" />
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="../styles/format.css">
+    <link rel="stylesheet" type="text/css" href="../styles/layout.css">
+	<script type="text/javascript" src="../scripts/date.js"></script>
+    <script src='http://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script src='../scripts/jquery.keyframes.min.js'></script>
+    <title>The Inquisitive Introvert Apps</title>
+	<style>
+		figure {
+			display: inline-block;
+			vertical-align: top;
+			width: 260px;
+			padding: 5px;
+			border-radius: 10px;
+			background-color: rgba(217,218,228,0.5);
+		}
+		figcaption {
+			font-size: .75em;
+		}
+		a {
+			text-decoration: none;
+		}
+		figure img {
+			border-radius: 7px;
+			display: block;
+			margin: auto;
+		}
+		figure:hover {
+			transform: scale(1.05);
+			border: solid 1px;
+		}
+		.popup {
+			text-decoration: underline;
+		}
+		.popup+span {
+			display: none;
+			position: absolute;
+			font-size: 75%;
+			background-color: rgb(232,228,235);
+			border: solid 1px;
+			padding: 3px;
+		}
+		.popup:hover+span {
+			display: block;
+		}
+		img.logo {
+			display: inline-block;
+			margin: 0 1em 1em 1em;
+		}
+		p.logo {
+			display: inline-block;
+			width: 75%;
+			vertical-align: top;
+		}
+	</style>
+	<script>
+	$(window).load(function(){
+		$("figure img").hover(function() {
+			$(this).addClass("animated rubberBand");
+		});
+	});
+	</script>
+</head>
+
+<body onLoad="document.getElementById('date').innerHTML=document.lastModified;">
+    <header>
+		<h1>Mobile Apps</h1>
+    </header>
+    <nav>
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a id="current" href="#">Mobile Apps</a>
+			</li>
+			<li><a href="../knitting/index.html">Knitting</a>
+			</li>
+			<li><a href="../documentation/index.html">Documentation</a>
+			</li>
+		</ul>
+    </nav>
+    <section id="content">
+		<h2>Yarn Requirements</h2>
+		<img class="logo" src="../images/yarn-req/small-logo.png" />
+		<p class="logo">Quickly estimate the amount of yarn you need for a project when you are out shopping for
+		yarn or gazing at your stash and trying to figure out if you have enough of that wool to
+		make a sweater for your niece.  The Yarn estimator handles both Imperial and metric units,
+		and a mixture of the two, as well.</p>    
+		<p>The app calculates estimates for the following projects: </p>
+		<ul>
+			<li>Sweaters</li>
+			<li>Vests</li>
+			<li>Scarves</li>
+			<li>Blankets</li>
+			<li>Tams (Berets)</li>
+			<li>Toques (Ski caps)</li>
+			<li>Socks</li>
+			<li>Mittens</li>
+			<li>Gloves</li>
+		</ul>
+			<figure>
+				<img src="../images/yarn-req/main-screen.png">
+				<figcaption>
+					<h2>Project Screen</h2>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/yarn-req/sweater-screen.png">
+				<figcaption>
+					<h2>Sweater Screen</h2>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/yarn-req/scarf-screen.png">
+				<figcaption>
+					<h2>Scarf Screen</h2>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/yarn-req/sock-screen.png">
+				<figcaption>
+					<h2>Sock Screen</h2>
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="../images/yarn-req/hat-screen.png">
+				<figcaption>
+					<h2>Toque Screen</h2>
+				</figcaption>
+			</figure>
+		<figure>
+			<img src="../images/yarn-req/weight-screen.png">
+			<figcaption>
+				<h2>Weight Screen</h2>
+				<p>This screen provides reference values for the various weights of yarn</p>
+			</figcaption>
+		</figure>
+	</section>
+
+    <footer>
+		<div>
+			<p>Copyright &copy; The Inquisitive Introvert 2016</p>
+			<p>Last modified: <span id="date"></span></p>			
+		</div>
+		<div id="contact">
+			<p>email: <a href="mailto:dengelmeyer@icloud.com">dengelmeyer@icloud.com</a></p>
+			<a id="facebook" href="https://www.facebook.com/debbie.engelmeyer"><img src="../images/FB-f-Logo__blue_29.png" alt="Facebook"/></a>
+			<a id="linkedin" href="https://www.linkedin.com/in/deborahengelmeyer"><img src="../images/In-2C-28px-TM.png" alt="LinkedIn"/></a>		
+		</div>
+    </footer>
+</body>
+</html>
