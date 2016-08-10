@@ -1,6 +1,6 @@
 /* Overall formatting */
 html {
-    background-color: #D4D8D6;
+    background-color: #e7e7e7;
 }
 
 body {
@@ -22,7 +22,7 @@ header {
     text-align: center;
     min-height: 180px;
     position: relative; /* set up header so social can be positioned relative to it. */
-    border-radius: 5px;
+    border-radius: 10px 10px 0 0;
     background-image: url(../images/Icon180.png);
     background-repeat: no-repeat;
     padding: 2em 1em 0.5em 5em;
@@ -36,7 +36,7 @@ header section {
 nav {
     padding-top: 1px;
     padding-bottom: 1px;
-    border-radius: 5px;
+    border-radius: 0 0 10px 10px;
 }
 
 nav h2 {
@@ -62,50 +62,23 @@ nav a:link, nav a:visited {
     text-decoration: none;
     font-style: italic;
     font-weight: bold;
-    background-color: #D4D8D6;
+    background-color: #e7e7e7;
     border: solid 1px;
-    color: #2F6974;
+    color: #274167;
     text-align: center;
     padding: 5px 10px;
 }
-/* Sub-menu formatting */
-nav ul ul a {
-    display: block;
-}
-nav>ul>li>ul {
-    max-width: 10em;
-    position: absolute;
-    display: none;
-}
-nav>ul>li>ul>li {
-    display: block;
-    background-color: rgb(217,218,228);
-    border-top: solid 1px;
-    border-color: #0A0670; /* dark navy */
-    margin: 0;
-}
-/* Show the sub-menus when the parent is hovered over */
-nav>ul>li:hover>ul {
-    display: block;
-}
 
 nav #current {
-    background-color: #D4D8D6;
+    background-color: #e7e7e7;
     color: #703030; /* dark burgundy */
     border: solid 2px;
 }
 
 nav a:hover, nav a:active {
-    background-color: rgb(190,229,234);
-    color: #0A0670; /* dark navy */
+    background-color: #D4D8D6;
+    color: #274167; /* dark navy */
     border: solid 2px;
-}
-
-nav>ul>li>ul>li>a:link, nav>ul>li>ul>li>a:visited {
-    text-align: left;
-    color: #0A0670; /* dark navy */
-    background-color: rgb(217,218,228);
-    font-size: 0.8em;
 }
 
 /* Content formatting */
@@ -133,7 +106,7 @@ footer {
     margin-top: 1em;
     padding-bottom: .25em;
     padding-top: .5em;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 footer p {
@@ -182,14 +155,14 @@ a:visited, a:focus, a:hover, a:active {
 
 /* dl formatting */
 dt {
-	color: #2F6974; /* greenish */
+	color: #274167; /* deep navy */
 	font-style: italic;
 }
 
 /* table formatting */
 table, th, td {
     border-style: groove;
-	border-color: #C77966;
+	border-color: #274167;
 }
 
 th, td {
